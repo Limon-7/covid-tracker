@@ -10,7 +10,7 @@
 }
 .header__infoBox {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.74fr 1.25fr 1.25fr;
   grid-gap: 20px;
   justify-content: space-between;
   margin-bottom: 20px;

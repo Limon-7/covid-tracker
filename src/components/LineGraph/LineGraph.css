@@ -1,5 +1,5 @@
 .app__graph {
-  background-color: rgb(233, 200, 200);
+  background-color: rgb(238, 114, 114);
   margin-top: 20px;
   padding: 10px;
   max-height: 300;
@@ -7,4 +7,8 @@
 .app__graph h3 {
   margin-bottom: 20px;
   text-align: center;
+}
+.lineGraph--recovered {
+  background: greenyellow;
+  color: #111;
 }

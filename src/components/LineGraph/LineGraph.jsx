@@ -51,22 +51,6 @@ const options = {
     ],
   },
 };
-// function
-// const buildChartData = (data, casesType) => {
-//   let chartData = [];
-//   let lastDataPoint;
-//   for (let date in data.cases) {
-//     if (lastDataPoint) {
-//       let newDataPoint = {
-//         x: date,
-//         y: data[casesType][date] - lastDataPoint,
-//       };
-//       chartData.push(newDataPoint);
-//     }
-//     lastDataPoint = data[casesType][date];
-//   }
-//   return chartData;
-// };
 
 const buildChartData = (data, casesType) => {
   let chartData = [];
@@ -100,7 +84,11 @@ function LineGraph(props) {
     fetchData();
   }, [casesType]);
   return (
-    <div className={props.className}>
+    <div
+      className={`${props.className} ${
+        casesType === "cases" && "lineGraph--cases"
+      } ${casesType === "recovered" && "lineGraph--recovered"}`}
+    >
       <h3>Worldwide new {casesType}</h3>{" "}
       {data?.length > 0 && (
         <Line
