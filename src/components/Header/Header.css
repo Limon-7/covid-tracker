@@ -1,0 +1,18 @@
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.header_info {
+  display: flex;
+  flex-direction: column;
+}
+.header__infoBox {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}

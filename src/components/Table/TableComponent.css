@@ -1,0 +1,40 @@
+.tableComponent {
+  margin-top: 20px;
+  overflow-y: scroll;
+  height: 400px;
+  color: #6a5d5d;
+  /* max-width: 400px; */
+}
+.tableComponent__table {
+  width: 100%;
+}
+.tableComponent_table th,
+td {
+  padding: 0.5rem;
+  border-collapse: collapse;
+}
+.tableComponent__table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.tableComponent__head tr {
+  display: flex;
+  position: sticky;
+  top: 0;
+  text-align: left;
+  background: rgb(199, 152, 152);
+  color: #fff;
+  padding: 0.5rem;
+}
+.tableComponent__head th {
+  cursor: pointer;
+}
+.tableComponent__body tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media (max-width: 990px) {
+  .tableComponent__table {
+    width: 98%;
+  }
+}
